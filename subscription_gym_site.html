@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Subscription Page- HEALTH.FIT</title>
+        <link rel="stylesheet" href="subscription_gym_site.css">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="subscription_gym_site.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="https://t2.gstatic.com/images?q=tbn:ANd9GcR9SOkl2GeCMsFJtWiRnWb5SMILuOHQsUdJyEBr79-EdD37fTIu"
+                 alt="logo" style="height:40px; width:40px;">
+            </div>
+            <div class="brand_name">
+                <h3>HEALTH.FIT</h3>
+            </div>
+                <div class="home_button">
+                    <!-- <input type="button" value="LOGIN" id="login_btn"> -->
+                    <a href="home_gym_site.html" id="home_btn1"><button id="home_btn">Go Back To Home Page</button></a>
+                </div>
+        </header>
+        <section id="box_subs">
+            <div id="subs_heading">
+                <h2 style="color: rgb(188, 165, 231);">SUBSCRIBE</h2>
+                <h2 style="color: rgb(30, 25, 41);">&nbsp;NOW</h2>
+            </div>
+            <div id="form">
+            <form id="login_form">
+
+                <input type="text" id="text" class="user_input" placeholder="Enter your Name" required><br>
+                <input type="email" id="gmail" class="user_input" placeholder="Enter your E-mail" required><br>
+                <input type="tel" id="tele" class="user_input" placeholder="10 Digit Phone no." required><br>
+                <select class="opt_subs" required>
+                    <option id="select_prog" value="select" class="opt_prog">Select the Program</option>
+                    <option id="new_prog" value="4" class="opt_prog">New Gym Training</option>
+                    <option id="basic_prog" value="10" class="opt_prog">Basic Fitness</option>
+                    <option id="yoga_prog" value="16" class="opt_prog">Yoga</option>
+                    <option id="muscle_prog" value="10" class="opt_prog">Muscle Building</option>
+                    <option id="body_prog" value="16" class="opt_prog">Body Building</option>
+                </select>
+                <select class="opt_subs" required>
+                    <option id="select_week" value="select" class="opt_week">Select number of weeks</option>
+                    <option id="4_week" value="4" class="opt_week">4 weeks</option>
+                    <option id="10_week" value="10" class="opt_week">10 weeks</option>
+                    <option id="16_week" value="16" class="opt_week">16 weeks</option>
+                </select>
+                
+                <input type="password" id="password" class="user_input" placeholder="Set your password" required>
+            </div>
+
+            <div id="login_btn_div">
+                <button id="subs_btn" onclick="subs_btn_js()">Subscribe</button>
+            </div>
+            
+    
+            </form>
+        </section>
+    </body>
+</html>
